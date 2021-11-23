@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ринат Алимов](https://up.htmlacademy.ru/adaptive/24/user/1869941).
-* Наставник: `Сергей Артёмов`.
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
