@@ -1,0 +1,30 @@
+<header class="header">
+  <div class="header__footer-logo footer-logo">
+    <a class="footer-logo__cat-logo-link" href="index.html" {% if permalink === "index.html" %}aria-current="page"{% endif %}>
+      <img class="footer-logo__cat-logo" src="img/cat-logo.png" alt="Логотип кота Cat Energy" width="34" height="38">
+    </a>
+    <a class="cat-energy-logo-link" href="index.html" {% if permalink === "index.html" %}aria-current="page"{% endif %}>
+      <img class="cat-energy-logo" src="img/cat-energy-logo.svg" alt="Логотип надписи Cat Energy" width="101" height="18">
+    </a>
+  </div>
+  <nav class="main-navigation">
+    <button class="main-navigation__toggle" type="button" hidden>
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <ul class="main-navigation__list">
+      {% for page in pages %}
+        <li class="main-navigation__item">
+          <a
+            class="navigation-link"
+            href="{{ page.path }}"
+            {% if permalink === page.path %}
+              aria-current="page"
+            {% endif %}
+          >{{ page.name }}</a>
+        </li>
+      {% else %}
+        <li>Из навигации пропали все пункты 😕</li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
