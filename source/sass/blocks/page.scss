@@ -3,5 +3,11 @@
 }
 
 .page__body {
-  margin: 0;
+  width: 100%;
+  font-family: var(--accent-font);
+  font-weight: 400;
+}
+
+.page__footer {
+  background-color: #f2f2f2;
 }

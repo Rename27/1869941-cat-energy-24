@@ -10,25 +10,27 @@
 
   <main class="main-content">
     <section class="main-content__promo promo">
-      <h1 class="promo__title">Функциональное питание для котов</h1>
-      <h3 class="promo__subtitle">Занялся собой? Займись котом!</h3>
+      <div class="promo__wrapper">
+        <h1 class="promo__title">Функциональное питание для котов</h1>
+        <h3 class="promo__subtitle">Занялся собой? Займись котом!</h3>
+      </div>
       <img class="promo__image" src="img/food-box.png" alt="Упаковка корма Cat Energy" width="280" height="270">
       <a class="promo__button button" href="form.html">Подобрать программу</a>
     </section>
     <section class="main-content__selection selection">
-      <div class="selection__selection-wrapper selection-wrapper selection-wrapper--slim">
-        <h2 class="selection-wrapper__title">Похудение</h2>
-        <p class="selection-wrapper__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+      <div class="selection__wrapper selection__wrapper--slim">
+        <h2 class="selection__title">Похудение</h2>
+        <p class="selection__description">Ваш кот весит больше собаки и почти утратил способность лазить по
           деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="selection-wrapper__link" href="catalog.html">Каталог slim</a>
+        <a class="selection__link" href="catalog.html">Каталог slim</a>
       </div>
-      <div class="selection__selection-wrapper selection-wrapper selection-wrapper--pro">
-        <h2 class="selection-wrapper__title">Набор массы</h2>
-        <p class="selection-wrapper__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+      <div class="selection__wrapper  selection__wrapper--pro">
+        <h2 class="selection__title">Набор массы</h2>
+        <p class="selection__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
           Energy Pro
           поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="selection-wrapper__link" href="catalog.html">Каталог pro</a>
+        <a class="selection__link" href="catalog.html">Каталог pro</a>
       </div>
     </section>
     <section class="main-content__advantages advantages">
@@ -64,16 +66,18 @@
         изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <div class="example__statistic statistic">
         <dl class="statistic__list">
-          <div class="statistic__item statistic__item--weight">
+          <div class="statistic__item statistic__item">
             <dt class="statistic__key">Снижение веса</dt>
             <dd class="statistic__value">5 кг</dd>
           </div>
-          <div class="statistic__item statistic__item--time">
+          <div class="statistic__item statistic__item">
             <dt class="statistic__key">Потрачено времени</dt>
             <dd class="statistic__value">60 дней</dd>
           </div>
-          <div class="statistic__item statistic__item--spending">
-            <dt class="statistic__description">Затраты на питание</dt>
+        </dl>
+        <dl class="statistic__list statistic__list--spending">
+          <div class="statistic__item statistic__item">
+            <dt class="statistic__key">Затраты на питание:</dt>
             <dd class="statistic__value">15 000 РУБ.</dd>
           </div>
         </dl>

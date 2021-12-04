@@ -1,0 +1,34 @@
+.advantages__title {
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages__item {
+  padding-bottom: 20px;
+}
+
+.advantages__item:last-child {
+  padding-bottom: 49px;
+}
+
+.advantages__icon {
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.advantages__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
