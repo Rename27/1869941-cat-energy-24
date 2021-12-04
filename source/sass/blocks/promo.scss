@@ -1,0 +1,32 @@
+.promo {
+  text-align: center;
+}
+
+.promo-wrapper {
+  color: #ffffff;
+  background-image: url("../../img/index-background-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo-wrapper__title {
+  margin: 0;
+  padding: 27px 0 25px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.promo-wrapper__subtitle {
+  margin: 0;
+  padding-bottom: 164px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.promo-wrapper__button {
+  font-size: 14px;
+  line-height: 18px;
+}

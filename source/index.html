@@ -10,8 +10,10 @@
 
   <main class="main-content">
     <section class="main-content__promo promo">
-      <h1 class="promo__title">Функциональное питание для котов</h1>
-      <h3 class="promo__subtitle">Занялся собой? Займись котом!</h3>
+      <div class="promo-wrapper">
+        <h1 class="promo-wrapper__title">Функциональное питание для котов</h1>
+        <h3 class="promo-wrapper__subtitle">Занялся собой? Займись котом!</h3>
+      </div>
       <img class="promo__image" src="img/food-box.png" alt="Упаковка корма Cat Energy" width="280" height="270">
       <a class="promo__button button" href="form.html">Подобрать программу</a>
     </section>
@@ -64,24 +66,27 @@
         изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <div class="example__statistic statistic">
         <dl class="statistic__list">
-          <div class="statistic__item statistic__item--weight">
+          <div class="statistic__item statistic__item">
             <dt class="statistic__key">Снижение веса</dt>
             <dd class="statistic__value">5 кг</dd>
           </div>
-          <div class="statistic__item statistic__item--time">
+          <div class="statistic__item statistic__item">
             <dt class="statistic__key">Потрачено времени</dt>
             <dd class="statistic__value">60 дней</dd>
           </div>
-          <div class="statistic__item statistic__item--spending">
-            <dt class="statistic__description">Затраты на питание</dt>
+        </dl>
+        <dl class="statistic__list statistic__list--spending">
+          <div class="statistic__item statistic__item">
+            <dt class="statistic__key">Затраты на питание:</dt>
             <dd class="statistic__value">15 000 РУБ.</dd>
           </div>
-        </dl>
-        <div class=" example__curtain curtain">
-          <img class="curtain__cat-before" src="img/cat-before.png" alt="Изображение кота -ДО">
-          <img class="curtain__cat-after" src="img/cat-after.png" alt="Изображение кота -ПОСЛЕ">
-          <div class="curtain__range"></div>
-        </div>
+      </div>
+      </dl>
+      <div class=" example__curtain curtain">
+        <img class="curtain__cat-before" src="img/cat-before.png" alt="Изображение кота -ДО">
+        <img class="curtain__cat-after" src="img/cat-after.png" alt="Изображение кота -ПОСЛЕ">
+        <div class="curtain__range"></div>
+      </div>
       </div>
     </section>
   </main>
