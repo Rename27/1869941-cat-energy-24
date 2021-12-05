@@ -2,14 +2,14 @@
   text-align: center;
 }
 
-.promo-wrapper {
+.promo__wrapper {
   color: #ffffff;
   background-image: url("../../img/index-background-cat.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.promo-wrapper__title {
+.promo__title {
   margin: 0;
   padding: 27px 0 25px;
   font-size: 36px;
@@ -17,7 +17,7 @@
   font-weight: 400;
 }
 
-.promo-wrapper__subtitle {
+.promo__subtitle {
   margin: 0;
   padding-bottom: 164px;
   font-size: 14px;
@@ -26,7 +26,7 @@
   font-weight: 400;
 }
 
-.promo-wrapper__button {
+.promo__button {
   font-size: 14px;
   line-height: 18px;
 }

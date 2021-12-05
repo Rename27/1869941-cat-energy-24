@@ -1,4 +1,4 @@
-<header class="header">
+<header class="page__header header">
   <div class="header__footer-logo footer-logo">
     <a class="footer-logo__cat-logo-link" href="index.html" {% if permalink === "index.html" %}aria-current="page"{% endif %}>
       <img class="footer-logo__cat-logo" src="img/cat-logo.png" alt="Логотип кота Cat Energy" width="34" height="38">
@@ -15,7 +15,7 @@
       {% for page in pages %}
         <li class="main-navigation__item">
           <a
-            class="navigation-link"
+            class="main-navigation__link"
             href="{{ page.path }}"
             {% if permalink === page.path %}
               aria-current="page"
