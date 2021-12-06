@@ -1,11 +1,9 @@
-.program {
-  border: 1px solid #d9d9d9;
-}
-
 .program__list {
   margin: 0;
   padding: 22px 0 19px;
   list-style-type: none;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .program__item:not(:last-child) {
