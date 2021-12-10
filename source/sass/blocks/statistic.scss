@@ -1,11 +1,30 @@
+.statistic {
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
+  column-gap: 31px;
+}
+
 .statistic__list {
-  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.statistic__list--time {
+  justify-self: end;
+}
+
+.statistic__item {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 .statistic__key {
+  font-family: var(--main-font);
   font-size: 12px;
   line-height: 12px;
-  text-transform: lowercase;
+  text-align: center;
   color: #444444;
 }
 
@@ -15,14 +34,25 @@
   line-height: 12px;
 }
 
-.statistic__list--spending .statistic__key {
+.statistic__list--spending {
+  margin: 20px 0 40px;
+  grid-column: span 2;
+  justify-self: center;
+}
+
+.statistic__item--spending {
+  flex-direction: row;
+}
+
+.statistic__item--spending .statistic__key {
+  font-family: var(--accent-font);
   font-size: 14px;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
 }
 
-.statistic__list--spending .statistic__value {
+.statistic__item--spending .statistic__value {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;

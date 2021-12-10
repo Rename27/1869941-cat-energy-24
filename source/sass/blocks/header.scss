@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.header__cat-logo {
+  margin-right: 56px;
+}

@@ -1,4 +1,6 @@
 .social-networks {
+  width: 280px;
+  text-align: center;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -6,5 +8,7 @@
 .social-networks__list {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
   list-style-type: none;
 }
