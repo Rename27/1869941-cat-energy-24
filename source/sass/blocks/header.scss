@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  padding: 12px 0 17px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 24px 0 0;
+  }
+}
+
+.header__cat-logo {
+  margin-right: 56px;
+
+  @media (min-width: 768px) {
+    margin-right: 12px;
+  }
+}

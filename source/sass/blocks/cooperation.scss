@@ -1,9 +1,23 @@
 .cooperation {
+  display: flex;
+  justify-content: space-between;
   line-height: 20px;
+  background-color: #ffffff;
+  padding: 26px 0;
+
+  @media (min-width: 768px) {
+    padding: 60px 40px 56px;
+  }
+
+  @media (min-width: 1220px) {
+    padding: 56px 80px;
+  }
 }
 
 .cooperation__title {
   margin: 0;
+  width: 125px;
   font-size: 16px;
+  font-weight: 400;
   text-transform: uppercase;
 }

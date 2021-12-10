@@ -1,3 +1,49 @@
+.comments__form-group-title {
+  position: relative;
+  padding: 0;
+  margin: 0 0 38px 0;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    right: -20px;
+    left: 127px;
+    height: 2px;
+    background-color: #68b738;
+    content: "";
+  }
+}
+
 .comments__texarea {
+  margin-bottom: 23px;
+  padding: 9px 12px 9px 15px;
+  width: 100%;
+  min-height: 150px;
+  font-size: 16px;
+  line-height: 18px;
   border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  resize: none;
+
+  &::placeholder {
+    font-family: var(--accent-font);
+    text-transform: uppercase;
+    color: #444444;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 65px;
+    padding: 9px 19px;
+    min-height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -1,17 +1,83 @@
 .example {
   background-color: #eaeaea;
+  box-shadow: 20px 0 #eaeaea, -20px 0 #eaeaea;
+
+  @media (min-width: 768px) {
+    border-top: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    box-shadow: none;
+  }
+
+  @media (min-width: 1220px) {
+    border: none;
+  }
 }
 
 .example__title {
   margin: 0;
+  margin-bottom: 40px;
+  padding-top: 25px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: 768px) {
+    margin-bottom: 63px;
+    padding-top: 43px;
+  }
+
+  @media (min-width: 1220px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 0 0 76px;
+    background-color: #ffffff;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: 1220px) {
+    background-color: #eaeaea;
+  }
+}
+
+.example__container {
+  @media (min-width: 1220px) {
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .example__description {
   margin: 0;
+  margin-bottom: 20px;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: 768px) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: 1220px) {
+    margin: 0 193px 69px 0;
+    width: 436px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__statistic {
+  margin: 0;
+
+  @media (min-width: 768px) {
+    margin-bottom: 250px;
+  }
+
+  @media (min-width: 1220px) {
+    margin: 0;
+  }
 }

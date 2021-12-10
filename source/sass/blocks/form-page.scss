@@ -1,12 +1,33 @@
+.form-page {
+  @media (min-width: 768px) {
+    padding: 0 36px 0 40px;
+  }
+}
+
 .form-page__title {
   margin: 27px 0 37px;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    margin: 65px 0 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form-page__description {
-  margin: 0 0 39px 0;
+  width: 226px;
   font-size: 14px;
   line-height: 18px;
+  margin: 0 0 39px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    margin: 0 0 66px;
+    width: 324px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

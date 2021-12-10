@@ -1,5 +1,13 @@
-.address {
+.address__text {
+  margin: 0;
+  font-family: var(--main-font);
   font-size: 14px;
   font-style: normal;
   color: #444444;
+}
+
+.address__text--street {
+  @media (min-width: 768px) {
+    margin-bottom: 28px;
+  }
 }
