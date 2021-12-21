@@ -5,3 +5,9 @@
   font-style: normal;
   color: #444444;
 }
+
+.address__text--street {
+  @media (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+}

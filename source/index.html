@@ -8,18 +8,16 @@
 <body class="page__body">
   {% include "header.njk" %}
 
-  <main class="main-content">
+  <main class="main-content page__centerer">
     <section class="main-content__promo promo">
-      <div class="promo__wrapper page__centerer">
+      <div class="promo__wrapper">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <h3 class="promo__subtitle">Занялся собой? Займись котом!</h3>
       </div>
-      <div class="page__centerer">
-        <img class="promo__image" src="img/food-box.png" alt="Упаковка корма Cat Energy" width="280" height="270">
-        <a class="promo__button button" href="form.html">Подобрать программу</a>
-      </div>
+      <img class="promo__image" src="img/food-box.png" alt="Упаковка корма Cat Energy" width="280" height="270">
+      <a class="promo__button button" href="form.html">Подобрать программу</a>
     </section>
-    <section class="main-content__selection selection page__centerer">
+    <section class="main-content__selection selection">
       <div class="selection__wrapper selection__wrapper--slim">
         <h2 class="selection__title">Похудение</h2>
         <p class="selection__description">Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -35,62 +33,66 @@
         <a class="selection__link" href="catalog.html">Каталог pro</a>
       </div>
     </section>
-    <section class="main-content__advantages advantages page__centerer">
+    <section class="main-content__advantages advantages">
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
           <div class="advantages__icon">
           </div>
           <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+          <span class="advantages__number">1</span>
         </li>
         <li class="advantages__item">
           <div class="advantages__icon">
           </div>
           <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </p>
+          <span class="advantages__number">2</span>
         </li>
         <li class="advantages__item">
           <div class="advantages__icon">
           </div>
           <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          <span class="advantages__number">3</span>
         </li>
         <li class="advantages__item">
           <div class="advantages__icon">
           </div>
-          <p class="advantages__description">Уже через месяц <br> наслаждайтесь изменениями к лучшему вашего питомца!
+          <p class="advantages__description">Уже через месяц наслаждайтесь &nbsp; изменениями к лучшему вашего
+            питомца!
           </p>
+          <span class="advantages__number">4</span>
         </li>
       </ul>
     </section>
-    <section class="main-content__example example page__centerer">
+    <section class="main-content__example example">
       <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="example__statistic statistic">
-        <dl class="statistic__list statistic__list--weight">
+      <div class="example__wrapper">
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim. Отличный результат без
+          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <dl class="example__statistic statistic">
           <div class="statistic__item statistic__item--weight">
             <dt class="statistic__key">снижение <br> веса</dt>
             <dd class="statistic__value">5 кг</dd>
           </div>
-        </dl>
-        <dl class="statistic__list statistic__list--time">
           <div class="statistic__item statistic__item--time">
             <dt class="statistic__key">потрачено <br> времени</dt>
             <dd class="statistic__value">60 дней</dd>
           </div>
-        </dl>
-        <dl class="statistic__list statistic__list--spending">
           <div class="statistic__item statistic__item--spending">
             <dt class="statistic__key">Затраты на питание:</dt>
             <dd class="statistic__value">15 000 РУБ.</dd>
           </div>
         </dl>
-      </div>
-      <div class=" example__curtain curtain">
-        <img class="curtain__cat-before" src="img/cat-before.png" alt="Изображение кота -ДО">
-        <img class="curtain__cat-after" src="img/cat-after.png" alt="Изображение кота -ПОСЛЕ">
-        <div class="curtain__range"></div>
+        <div class=" example__curtain curtain">
+          <img class="curtain__cat curtain__cat--before" src="img/cat-before.png" alt="Изображение кота -ДО">
+          <img class="curtain__cat curtain__cat--after" src="img/cat-after.png" alt="Изображение кота -ПОСЛЕ">
+          <div class="curtain__range range">
+            <span class="range__description">Было</span>
+            <span class="range__description">Стало</span>
+          </div>
+        </div>
       </div>
     </section>
   </main>
