@@ -3,7 +3,7 @@
   grid-template-columns: 50% 26% 24%;
   grid-template-rows: 1fr 1fr 1fr;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     grid-template-columns: 36px 252px 36px;
     grid-template-rows: 161px 68px 89px 112px;
     background-color: #f2f2f2;
@@ -13,13 +13,13 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 768px) {
+    @media (--not-narrow-vp) {
       background-color: #ffffff;
       border: 2px solid #f2f2f2;
     }
   }
 
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
     grid-template-columns: 39px 168px 39px;
   }
 }
@@ -30,7 +30,7 @@
   justify-self: center;
   align-self: center;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     grid-template-columns: 36px 252px 36px;
     grid-template-rows: 161px 68px 89px 112px;
     grid-column: 2/3;
@@ -46,7 +46,7 @@
   text-transform: uppercase;
   color: #222222;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     grid-column: 2/3;
     justify-self: center;
     width: 124px;
@@ -63,7 +63,7 @@
   line-height: 16px;
   color: #444444;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     grid-column: 2/3;
     font-size: 16px;
   }
@@ -74,7 +74,7 @@
   justify-content: space-between;
   font-family: var(--main-font);
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     margin-bottom: 7px;
     padding-bottom: 7px;
     border-bottom: 1px solid #cdcdcd;
@@ -84,7 +84,7 @@
     flex-direction: column;
     text-align: center;
 
-    @media (min-width: 768px) {
+    @media (--not-narrow-vp) {
       margin: 0;
       padding: 0;
       border: none;
@@ -101,7 +101,7 @@
   color: #111111;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     margin-bottom: 23px;
     padding-top: 161px;
     width: 134px;
@@ -117,7 +117,7 @@
   &--show-more {
     margin-bottom: 21px;
 
-    @media (min-width: 768px) {
+    @media (--not-narrow-vp) {
       margin-bottom: 87px;
       width: 170px;
       line-height: 18px;
@@ -130,7 +130,7 @@
   grid-column: 1/-1;
   align-self: end;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     grid-column: 2/3;
     width: 100%;
     align-self: center;
@@ -142,7 +142,7 @@
     color: #444444;
     background-color: #f2f2f2;
 
-    @media (min-width: 768px) {
+    @media (--not-narrow-vp) {
       margin-bottom: 38px;
       width: 168px;
       align-self: center;

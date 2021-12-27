@@ -4,13 +4,13 @@
   grid-template-columns: repeat(2, 124px);
   column-gap: 31px;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     grid-template-columns: repeat(2, 162px) 300px;
     justify-content: start;
     column-gap: 42px;
   }
 
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
     grid-template-columns: repeat(2, 162px);
   }
 }
@@ -42,14 +42,14 @@
   grid-column: 2 span;
   margin: 20px auto 40px;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     grid-column: 3 / 4;
     margin: 0;
     flex-direction: column;
     align-items: end;
   }
 
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
 
     display: flex;
     grid-column: 1/3;
@@ -64,7 +64,7 @@
   color: #000000;
   text-transform: uppercase;
 
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
     margin-right: 63px;
   }
 }

@@ -25,13 +25,13 @@
   text-align: center;
   color: #ffffff;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     margin: 0;
     text-align: left;
     padding: 71px 0 69px 422px;
   }
 
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
     margin: 184px 42px 0;
     padding: 0;
     text-align: center;

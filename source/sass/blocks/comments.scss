@@ -6,7 +6,7 @@
   line-height: 26px;
   font-weight: 400;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     font-size: 36px;
     line-height: 36px;
   }
@@ -39,7 +39,7 @@
     color: #444444;
   }
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     margin-bottom: 65px;
     padding: 9px 19px;
     min-height: 174px;

@@ -1,8 +1,8 @@
 .aside__cooperation {
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
     width: 565px;
     position: absolute;
-    top: 1775px;
+    top: 95px;
     left: 110px;
   }
 }

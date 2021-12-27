@@ -5,11 +5,11 @@
   background-color: #ffffff;
   padding: 26px 0;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     padding: 60px 40px 56px;
   }
 
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
     padding: 56px 80px;
   }
 }

@@ -1,10 +1,10 @@
 .send {
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     display: flex;
     width: 523px;
   }
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     width: 100%;
   }
 }
@@ -13,12 +13,12 @@
   width: 100%;
   margin-bottom: 21px;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     width: 282px;
     margin: 0 61px 0 0;
   }
 
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
     width: 570px;
     margin: 0 81px 0 0;
   }
@@ -30,7 +30,7 @@
   line-height: 16px;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     font-size: 16px;
   }
 }

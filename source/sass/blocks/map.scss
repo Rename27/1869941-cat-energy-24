@@ -3,7 +3,7 @@
   height: 362px;
   border: none;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     height: 400px;
   }
 }

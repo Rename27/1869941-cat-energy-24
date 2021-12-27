@@ -7,7 +7,7 @@
   flex-direction: column;
   text-align: center;
 
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

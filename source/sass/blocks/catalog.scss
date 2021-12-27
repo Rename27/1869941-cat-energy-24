@@ -3,14 +3,14 @@
   padding: 0;
   list-style-type: none;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
     column-gap: 60px;
     row-gap: 141px;
   }
 
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
     grid-template-columns: repeat(4, 246px);
     column-gap: 80px;
     row-gap: 144px;
@@ -26,7 +26,7 @@
     border-bottom: 1px solid #ebebeb;
   }
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     padding: 0;
     border: none;
 

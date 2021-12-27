@@ -1,5 +1,5 @@
 .program {
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
     width: 50%;
   }
 }
@@ -18,7 +18,7 @@
     content: "";
   }
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     padding: 25px 0 0 28px;
     border: 1px solid #e7e7e7;
 
@@ -34,7 +34,7 @@
   &:last-child {
     margin-bottom: 19px;
 
-    @media (min-width: 768px) {
+    @media (--not-narrow-vp) {
       margin-bottom: 25px;
     }
   }
@@ -43,7 +43,7 @@
 .program__input {
   margin: 0 16px 0 0;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     margin: 0 20px 0 0;
   }
 }
@@ -54,7 +54,7 @@
   text-transform: uppercase;
   color: #222222;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     font-size: 20px;
     line-height: 30px;
   }

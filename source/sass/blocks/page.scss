@@ -13,12 +13,16 @@
 .page__centerer {
   margin: 0 20px;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     margin: 0 30px;
   }
 
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
     width: 1220px;
     margin: 0 auto;
   }
+}
+
+.page__aside {
+  position: relative;
 }

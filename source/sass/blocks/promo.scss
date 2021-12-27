@@ -2,7 +2,7 @@
   text-align: center;
   color: #ffffff;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     text-align: left;
     color: #000000;
   }
@@ -11,7 +11,7 @@
 .promo__wrapper {
   position: relative;
 
-  @media (min-width: 1220px) {
+  @media (--wide-vp) {
     position: static;
   }
 
@@ -29,11 +29,11 @@
     z-index: -1;
     content: "";
 
-    @media (min-width: 768px) {
+    @media (--not-narrow-vp) {
       position: initial;
     }
 
-    @media (min-width: 1220px) {
+    @media (--wide-vp) {
       position: absolute;
       height: 696px;
       width: 50%;
@@ -50,7 +50,7 @@
   line-height: 36px;
   font-weight: 400;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     margin: 46px 0 41px 87px;
     padding: 0;
   }
@@ -64,7 +64,7 @@
   text-transform: uppercase;
   font-weight: 400;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     margin: 0 0 20px 87px;
     padding: 0;
   }
@@ -73,7 +73,7 @@
 .promo__image {
   margin-top: -136px;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     margin: 0;
     width: 709px;
     height: 609px;
@@ -86,7 +86,7 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     position: absolute;
     top: 314px;
     left: 86px;

@@ -7,7 +7,7 @@
 }
 
 .address__text--street {
-  @media (min-width: 768px) {
+  @media (--not-narrow-vp) {
     margin-bottom: 28px;
   }
 }
