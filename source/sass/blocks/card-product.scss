@@ -4,7 +4,7 @@
   grid-template-rows: 1fr 1fr 1fr;
 
   @media (--not-narrow-vp) {
-    grid-template-columns: 36px 252px 36px;
+    grid-template-columns: 1fr 7fr 1fr;
     grid-template-rows: 161px 68px 89px 112px;
     background-color: #f2f2f2;
   }
@@ -20,7 +20,7 @@
   }
 
   @media (--wide-vp) {
-    grid-template-columns: 39px 168px 39px;
+    grid-template-columns: 1fr 4.3fr 1fr;
   }
 }
 

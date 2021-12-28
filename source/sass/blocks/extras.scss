@@ -36,8 +36,8 @@
   @media (--not-narrow-vp) {
     margin-bottom: 54px;
     display: grid;
-    grid-template-columns: 283px 188px;
-    grid-template-rows: 40px 40px;
+    grid-template-columns: repeat(auto-fill, minmax(221px, 1fr));
+    grid-template-rows: 40px;
     column-gap: 61px;
     row-gap: 32px;
     align-items: center;

@@ -1,3 +1,11 @@
+.product-more {
+  @media (--wide-vp) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 80px;
+  }
+}
+
 .product-more__list {
   margin: 0;
   padding: 0;
@@ -80,5 +88,13 @@
   @media (--wide-vp) {
     margin: 0;
     width: 244px;
+  }
+}
+
+.product-more__gift {
+  margin-top: 35px;
+
+  @media (--wide-vp) {
+    margin: 0;
   }
 }

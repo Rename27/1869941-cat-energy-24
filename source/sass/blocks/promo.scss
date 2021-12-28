@@ -1,4 +1,6 @@
 .promo {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   color: #ffffff;
 
@@ -36,8 +38,8 @@
     @media (--wide-vp) {
       position: absolute;
       height: 696px;
-      width: 50%;
       left: 720px;
+      background-size: cover;
     }
   }
 }
@@ -72,24 +74,24 @@
 
 .promo__image {
   margin-top: -136px;
+  align-self: center;
 
   @media (--not-narrow-vp) {
-    margin: 0;
+    margin-top: -77px;
     width: 709px;
     height: 609px;
+    order: 3;
+    z-index: -1;
   }
 }
 
 .promo__button {
-  margin: 0 auto;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
 
   @media (--not-narrow-vp) {
-    position: absolute;
-    top: 314px;
-    left: 86px;
+    margin: 29px 0 0 87px;
     padding: 14px 0;
     width: 244px;
     font-size: 20px;

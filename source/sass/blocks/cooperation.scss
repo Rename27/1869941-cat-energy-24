@@ -1,16 +1,27 @@
 .cooperation {
+  @media (--wide-vp) {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    z-index: 1;
+  }
+}
+
+.cooperation__wrapper {
+  padding: 26px 0;
   display: flex;
   justify-content: space-between;
   line-height: 20px;
   background-color: #ffffff;
-  padding: 26px 0;
+  box-sizing: border-box;
 
   @media (--not-narrow-vp) {
     padding: 60px 40px 56px;
   }
 
   @media (--wide-vp) {
+    margin: 95px 0;
     padding: 56px 80px;
+    width: 565px;
   }
 }
 
