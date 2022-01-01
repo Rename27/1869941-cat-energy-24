@@ -9,8 +9,9 @@
 }
 
 .header__logo {
-  padding: 12px 0 17px;
-  display: flex;
+  padding: 12px 0 9px;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
   align-items: center;
 
   @media (--not-narrow-vp) {
@@ -19,9 +20,27 @@
 }
 
 .header__cat-logo {
-  margin-right: 56px;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (--not-narrow-vp) {
     margin-right: 12px;
+  }
+}
+
+.header__cat-energy-logo {
+  justify-self: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

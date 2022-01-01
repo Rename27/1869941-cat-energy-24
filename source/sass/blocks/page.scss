@@ -10,6 +10,16 @@
   overflow-x: hidden;
 }
 
+.page__body--index .main-navigation__link {
+  @media (--wide-vp) {
+    color: #ffffff;
+
+    &[aria-current="page"] {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+}
+
 .page__centerer {
   margin: 0 20px;
 
