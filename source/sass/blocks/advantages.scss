@@ -18,10 +18,13 @@
 
 .advantages__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(247px, 1fr));
-  margin: 0;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  column-gap: 10px;
+  row-gap: 20px;
+  margin: 0 0 49px;
   padding: 0;
   list-style-type: none;
+  counter-reset: number;
 
   @media (--not-narrow-vp) {
     column-gap: 137px;
@@ -29,85 +32,61 @@
   }
 
   @media (--wide-vp) {
-    column-gap: 77px;
+    column-gap: 73px;
+    row-gap: 10px;
+    margin: 0 0 69px;
   }
 }
 
 .advantages__item {
   position: relative;
-  margin-bottom: 20px;
-  display: flex;
+  width: 274px;
 
-  &:last-child {
-    margin-bottom: 49px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
   }
 
   @media (--not-narrow-vp) {
-    padding: 40px 0 0;
-    width: 230px;
-    flex-direction: column;
+    width: 245px;
 
-    &:last-child {
-      margin-bottom: 0;
+    &::before {
+      top: 40px;
+      left: 0;
+      width: 80px;
+      height: 80px;
     }
 
-    &:nth-child(2n+1) {
-      margin-right: 136px;
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      z-index: -1;
+      counter-increment: number;
+      content: counter(number);
     }
-  }
-
-  @media (--wide-vp) {
-    margin: 0;
-
-    &:nth-child(2n+1) {
-      margin: 0;
-    }
-  }
-}
-
-.advantages__icon {
-  margin-right: 20px;
-  min-width: 60px;
-  height: 60px;
-  background-color: #68b738;
-
-  @media (--not-narrow-vp) {
-    margin-bottom: 31px;
-    width: 80px;
-    height: 80px;
   }
 }
 
 .advantages__description {
   margin: 0;
-  max-width: 200px;
+  padding: 0 0 0 80px;
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 
   @media (--not-narrow-vp) {
-    margin: 0 0 74px;
-    max-width: 194px;
-  }
-
-  @media (--wide-vp) {
+    padding: 151px 0 57px;
     font-size: 16px;
     line-height: 24px;
-  }
-}
-
-.advantages__number {
-  display: none;
-
-  @media (--not-narrow-vp) {
-    display: inline;
-    position: absolute;
-    top: 0;
-    right: 20px;
-    font-size: 280px;
-    line-height: 280px;
-    color: #f2f2f2;
-    z-index: -1;
   }
 }
