@@ -1,24 +1,33 @@
 .comments__form-group-title {
+  --air-gap: 23px;
+  --line-color: #68b738;
   position: relative;
   padding: 0;
   margin: 0 0 38px 0;
+  width: fit-content;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
 
-  @media (--not-narrow-vp) {
-    font-size: 36px;
-    line-height: 36px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    background-color: var(--line-color);
+    height: 2px;
+    width: calc(100vw - 100% - var(--air-gap));
+    right: calc(100% + var(--air-gap));
+    box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--line-color);
   }
 
-  &::after {
-    position: absolute;
-    top: 15px;
-    right: -20px;
-    left: 127px;
-    height: 2px;
-    background-color: #68b738;
-    content: "";
+  @media (--not-narrow-vp) {
+    --air-gap: 39px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      top: 22px;
+    }
   }
 }
 
