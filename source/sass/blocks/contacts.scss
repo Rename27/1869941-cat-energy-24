@@ -6,8 +6,6 @@
 
 .contacts__form-group-title {
   --air-gap: 41px;
-  --line-color: #68b738;
-  position: relative;
   padding: 26px 0 0;
   margin-bottom: 35px;
   width: 160px;
@@ -15,14 +13,7 @@
   line-height: 26px;
 
   &::before {
-    content: "";
-    position: absolute;
     top: 42px;
-    background-color: var(--line-color);
-    height: 2px;
-    width: calc(100vw - 100% - var(--air-gap));
-    right: calc(100% + var(--air-gap));
-    box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--line-color);
   }
 
   @media (--not-narrow-vp) {

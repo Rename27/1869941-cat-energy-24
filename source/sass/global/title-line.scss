@@ -1,0 +1,15 @@
+.title-line {
+  --air-gap: 23px;
+  --line-color: #68b738;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: var(--line-color);
+    height: 2px;
+    width: calc(100vw - 100% - var(--air-gap));
+    right: calc(100% + var(--air-gap));
+    box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--line-color);
+  }
+}

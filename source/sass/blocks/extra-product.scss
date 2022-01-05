@@ -3,4 +3,20 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  width: fit-content;
+
+  &::before {
+    top: 15px;
+  }
+
+  @media (--not-narrow-vp) {
+    --air-gap: 37px;
+    margin: 0 0 80px 37px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      top: 22px;
+    }
+  }
 }
