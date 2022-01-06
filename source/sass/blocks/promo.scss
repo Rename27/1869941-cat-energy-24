@@ -19,11 +19,12 @@
 
   &::before {
     position: absolute;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/cat-background-index.jpg");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/cat-background-index@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-color: #47454b;
+    height: 320px;
     top: 0;
     right: -20px;
     bottom: 0;
@@ -31,14 +32,19 @@
     z-index: -1;
     content: "";
 
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/cat-background-index@2x.jpg");
+    }
+
     @media (--not-narrow-vp) {
       position: initial;
     }
 
     @media (--wide-vp) {
       position: absolute;
-      height: 696px;
+      height: 694px;
       left: 50%;
+      background-position: 0% 0;
       background-size: cover;
     }
   }
@@ -78,8 +84,6 @@
 
   @media (--not-narrow-vp) {
     margin-top: -77px;
-    width: 709px;
-    height: 609px;
     order: 3;
     z-index: -1;
   }

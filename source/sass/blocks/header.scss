@@ -9,14 +9,18 @@
 }
 
 .header__logo {
-  padding: 12px 0 9px;
+  margin: 12px 0 9px;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   align-items: center;
 
   @media (--not-narrow-vp) {
     display: flex;
-    padding: 24px 0 0;
+    margin: 24px 0 0;
+  }
+
+  @media (--wide-vp) {
+    margin: 53px 0 0;
   }
 }
 
@@ -30,7 +34,7 @@
   }
 
   @media (--not-narrow-vp) {
-    margin-right: 12px;
+    display: none;
   }
 }
 
@@ -43,5 +47,11 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.header__cat-energy-logo img {
+  @media (--wide-vp) {
+    width: 202px;
   }
 }

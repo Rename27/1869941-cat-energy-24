@@ -1,6 +1,10 @@
 .main-navigation {
   @media (--not-narrow-vp) {
-    padding-top: 42px;
+    margin-top: 42px;
+  }
+
+  @media (--wide-vp) {
+    margin-top: 68px;
   }
 }
 
@@ -129,6 +133,14 @@
       position: initial;
     }
   }
+
+  @media (--wide-vp) {
+    margin-right: 35px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
 }
 
 .main-navigation__link {
@@ -159,5 +171,10 @@
     &[aria-current="page"] {
       border-bottom: 2px solid #68b738;
     }
+  }
+
+  @media (--wide-vp) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
