@@ -1,6 +1,7 @@
 .htmlacademy {
   padding: 22px 0;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
 }
 
@@ -8,4 +9,26 @@
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 18px;
+  align-self: center;
+  margin-right: 19px;
+  color: #444444;
+}
+
+.htmlacademy__logo {
+  width: 31px;
+  height: 31px;
+  mask: url("../../icons/sprite.svg#htmlacademy") no-repeat center;
+  background-color: #666666;
+
+  &:hover {
+    background-color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.htmlacademy__logo:active ~ .htmlacademy__title {
+  opacity: 0.3;
 }

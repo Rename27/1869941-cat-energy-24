@@ -1,4 +1,5 @@
 .gift {
+  margin-top: 35px;
   height: 290px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/cat-background-catalog@1x.jpg");
   background-position: center;
@@ -7,6 +8,15 @@
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/cat-background-catalog@2x.png");
+  }
+
+  @media (--not-narrow-vp) {
+    height: 200px;
+  }
+
+  @media (--wide-vp) {
+    margin: 0;
+    height: 288px;
   }
 }
 
@@ -20,11 +30,34 @@
   line-height: 20px;
   color: #ffffff;
 
+  &::before {
+    position: absolute;
+    top: 60px;
+    left: auto;
+    width: 80px;
+    height: 80px;
+    background: url("../../icons/sprite.svg#gift") no-repeat center;
+    content: "";
+  }
+
   @media (--not-narrow-vp) {
+    margin-right: 125px;
+    padding-top: 70px;
+    float: right;
     text-align: left;
+
+    &::before {
+      left: 77px;
+    }
   }
 
   @media (--wide-vp) {
+    margin: 0;
+    padding-top: 185px;
     text-align: center;
+
+    &::before {
+      left: 45px;
+    }
   }
 }

@@ -7,14 +7,21 @@
   flex-direction: column;
   text-align: center;
 
-  @media (--wide-vp) {
+  @media (--not-narrow-vp) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 }
 
-
 .footer__cat-energy-logo {
   padding: 39px 0 32px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

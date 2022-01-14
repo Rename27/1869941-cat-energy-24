@@ -6,8 +6,9 @@
     <a class="header__cat-energy-logo" href="index.html" {% if permalink=="index.html" %}aria-current="page" {% endif
       %}>
       <picture>
-        <source media="(min-width: 768px)" srcset="img/cat-energy-logo--wide.svg">
-        <img src="img/cat-energy-logo.svg" alt="Логотип надписи Cat Energy">
+        <source media="(min-width: 1280px)" srcset="img/cat-energy-logo--desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/cat-energy-logo--tablet.svg">
+        <img src="img/cat-energy-logo.svg" alt="Логотип Cat Energy">
       </picture>
     </a>
   </div>
@@ -24,5 +25,5 @@
       {% endfor %}
     </ul>
   </nav>
-  <script src="./js/nav-toggle.min.js"></script>
+  <script src="js/nav-toggle.min.js"></script>
 </header>

@@ -43,9 +43,15 @@
     left: 22px;
     width: 50px;
     height: 50px;
-    background-color: #68b738;
-    border-radius: 50%;
     content: "";
+  }
+
+  &--slim::before {
+    background-image: url("../../icons/sprite.svg#cat-slim");
+  }
+
+  &--pro::before {
+    background-image: url("../../icons/sprite.svg#cat-pro");
   }
 
   @media (--not-narrow-vp) {

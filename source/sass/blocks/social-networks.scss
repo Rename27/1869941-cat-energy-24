@@ -13,6 +13,41 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
+}
+
+.social-networks__item {
+  margin-right: 28px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.social-networks__link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #666666;
+
+  &--vk {
+    mask: url("../../icons/sprite.svg#vk");
+  }
+
+  &--instagram {
+    mask: url("../../icons/sprite.svg#instagram");
+  }
+
+  &--facebook {
+    mask: url("../../icons/sprite.svg#facebook");
+  }
+
+  &:hover {
+    background-color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

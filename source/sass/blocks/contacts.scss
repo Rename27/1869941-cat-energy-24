@@ -40,12 +40,31 @@
 }
 
 .contacts__item {
+  position: relative;
   margin-bottom: 14px;
   display: flex;
   align-items: center;
 
   &:last-child {
     margin-bottom: 23px;
+  }
+
+  &::after {
+    position: absolute;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #222222;
+    cursor: text;
+    content: " ";
+  }
+
+  &--email::after {
+    mask: url("../../icons/sprite.svg#email");
+  }
+
+  &--phone::after {
+    mask: url("../../icons/sprite.svg#phone");
   }
 
   @media (--not-narrow-vp) {

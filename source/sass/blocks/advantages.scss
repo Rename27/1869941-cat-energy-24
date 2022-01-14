@@ -49,7 +49,22 @@
     left: 0;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
+  }
+
+  &--leaf::before {
+    background-image: url("../../icons/sprite.svg#leaf");
+  }
+
+  &--cup::before {
+    background-image: url("../../icons/sprite.svg#cup");
+  }
+
+  &--eat::before {
+    background-image: url("../../icons/sprite.svg#eat");
+  }
+
+  &--time::before {
+    background-image: url("../../icons/sprite.svg#time");
   }
 
   @media (--not-narrow-vp) {

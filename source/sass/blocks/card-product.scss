@@ -93,6 +93,7 @@
 }
 
 .card-product__key--show-more {
+  position: relative;
   margin-bottom: 8px;
   padding-top: 59px;
   font-family: var(--accent-font);
@@ -101,6 +102,16 @@
   color: #111111;
   text-transform: uppercase;
 
+  &::before {
+    position: absolute;
+    top: 15px;
+    left: 125px;
+    width: 30px;
+    height: 30px;
+    background: url("../../icons/sprite.svg#plus") no-repeat center;
+    content: "";
+  }
+
   @media (--not-narrow-vp) {
     margin-bottom: 23px;
     padding-top: 161px;
@@ -108,6 +119,13 @@
     font-size: 20px;
     line-height: 22px;
     align-self: center;
+
+    &::before {
+      top: 40px;
+      left: 35px;
+      width: 60px;
+      height: 60px;
+    }
   }
 }
 

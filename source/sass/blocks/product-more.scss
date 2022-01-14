@@ -130,9 +130,5 @@
 }
 
 .product-more__gift {
-  margin-top: 35px;
-
-  @media (--wide-vp) {
-    margin: 0;
-  }
+  position: relative;
 }
