@@ -1,15 +1,17 @@
 <header class="page__header header page__centerer">
   <div class="header__logo">
-    <a class="header__cat-logo" href="index.html" {% if permalink=="index.html" %}aria-current="page" {% endif %}>
-      <img src="img/cat-logo.svg" alt="Логотип кота Cat Energy">
+    <a class="header__cat-logo " href="index.html" {% if permalink=="index.html" %}aria-current="page" {% endif %}>
+      <picture>
+        <source media="(min-width: 1280px)" srcset="img/identic.svg#cat-energy-logo--desktop">
+        <source media="(min-width: 768px)" srcset="img/identic.svg#cat-energy-logo--tablet">
+        <img class="header__logo-img" src="img/identic.svg#cat-energy-logo" alt="Логотип Cat Energy">
+      </picture>
     </a>
     <a class="header__cat-energy-logo" href="index.html" {% if permalink=="index.html" %}aria-current="page" {% endif
       %}>
-      <picture>
-        <source media="(min-width: 1280px)" srcset="img/cat-energy-logo--desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/cat-energy-logo--tablet.svg">
-        <img src="img/cat-energy-logo.svg" alt="Логотип Cat Energy">
-      </picture>
+      <svg class="header__logo-svg">
+        <use href="img/identic.svg#cat-energy"></use>
+      </svg>
     </a>
   </div>
   <nav class="header__main-navigation main-navigation main-navigation--open main-navigation--jsnone">
@@ -25,5 +27,4 @@
       {% endfor %}
     </ul>
   </nav>
-  <script src="js/nav-toggle.min.js"></script>
 </header>
