@@ -26,10 +26,13 @@
   }
 }
 
+.header__cat-logo {
+  width: fit-content;
+}
+
 .header__logo-img {
   width: 34px;
   height: 38px;
-  margin-right: 50px;
 
   @media (--not-narrow-vp) {
     width: 61px;

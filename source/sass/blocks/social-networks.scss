@@ -32,15 +32,15 @@
   background-color: #666666;
 
   &--vk {
-    mask: url("../../icons/sprite.svg#vk");
+    mask: url("../../icons/sprite.svg#vk") no-repeat center;
   }
 
   &--instagram {
-    mask: url("../../icons/sprite.svg#instagram");
+    mask: url("../../icons/sprite.svg#instagram") no-repeat center;
   }
 
   &--facebook {
-    mask: url("../../icons/sprite.svg#facebook");
+    mask: url("../../icons/sprite.svg#facebook") no-repeat center;
   }
 
   &:hover {
