@@ -26,24 +26,34 @@
 }
 
 .social-networks__link {
+  position: relative;
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-color: #666666;
 
-  &--vk {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-color: #666666;
+  }
+
+  &--vk::before {
     mask: url("../../icons/sprite.svg#vk") no-repeat center;
   }
 
-  &--instagram {
+  &--instagram::before {
     mask: url("../../icons/sprite.svg#instagram") no-repeat center;
   }
 
-  &--facebook {
+  &--facebook::before {
     mask: url("../../icons/sprite.svg#facebook") no-repeat center;
   }
 
-  &:hover {
+  &:hover::before {
     background-color: #68b738;
   }
 
