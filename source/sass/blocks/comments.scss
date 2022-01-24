@@ -1,6 +1,6 @@
 .comments__form-group-title {
   padding: 0;
-  margin: 0 0 38px 0;
+  margin: 0 0 37px;
   width: fit-content;
   font-size: 24px;
   line-height: 26px;
@@ -11,6 +11,7 @@
   }
 
   @media (--not-narrow-vp) {
+    margin: 0 0 76px;
     --air-gap: 39px;
     font-size: 36px;
     line-height: 36px;
@@ -22,8 +23,8 @@
 }
 
 .comments__texarea {
-  margin-bottom: 23px;
-  padding: 9px 12px 9px 15px;
+  margin-bottom: 18px;
+  padding: 8px 13px;
   width: 100%;
   min-height: 150px;
   font-size: 16px;
@@ -38,11 +39,19 @@
     color: #444444;
   }
 
+  &:focus-visible {
+    outline: 1px solid #444444;
+  }
+
   @media (--not-narrow-vp) {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
     padding: 9px 19px;
     min-height: 174px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (--wide-vp) {
+    margin-bottom: 62px;
   }
 }

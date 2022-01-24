@@ -1,6 +1,6 @@
 .form-page {
   @media (--not-narrow-vp) {
-    padding: 0 36px 0 40px;
+    padding: 0 37px 0 41px;
   }
 }
 
@@ -11,9 +11,13 @@
   font-weight: 400;
 
   @media (--not-narrow-vp) {
-    margin: 65px 0 54px;
+    margin: 52px 0 54px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (--wide-vp) {
+    margin: 71px 0 56px;
   }
 }
 
@@ -21,11 +25,11 @@
   width: 226px;
   font-size: 14px;
   line-height: 18px;
-  margin: 0 0 39px;
+  margin: 0 0 41px;
   text-transform: uppercase;
 
   @media (--not-narrow-vp) {
-    margin: 0 0 66px;
+    margin: 0 0 65px;
     width: 324px;
     font-size: 20px;
     line-height: 30px;

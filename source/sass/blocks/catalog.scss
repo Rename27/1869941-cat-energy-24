@@ -8,30 +8,43 @@
     grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
     column-gap: 60px;
     row-gap: 141px;
+    margin-bottom: 68px;
   }
 
   @media (--wide-vp) {
     grid-template-columns: repeat(4, 246px);
     column-gap: 80px;
     row-gap: 144px;
+    margin-bottom: 77px;
   }
 }
 
 .catalog__item {
-  margin: 0;
-  padding: 19px 0 25px;
-  border-top: 1px solid #ebebeb;
+  position: relative;
+  margin: 0 0 18px;
+  padding: 0 0 17px;
 
-  &:last-child {
-    border-bottom: 1px solid #ebebeb;
+  &::after {
+    position: absolute;
+    height: 1px;
+    right: -20px;
+    bottom: 0;
+    left: -20px;
+    background-color: #ebebeb;
+    content: "";
   }
 
   @media (--not-narrow-vp) {
+    margin: 0;
     padding: 0;
     border: none;
 
     &:last-child {
       border: none;
+    }
+
+    &::after {
+      position: initial;
     }
   }
 }

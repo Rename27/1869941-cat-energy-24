@@ -91,9 +91,10 @@
   list-style-type: none;
 
   @media (--not-narrow-vp) {
-    display: flex;
-    position: static;
+    width: 480px;
+    justify-content: flex-end;
     flex-wrap: wrap;
+    position: static;
     align-items: center;
     background-color: transparent;
   }

@@ -1,8 +1,11 @@
 .cooperation {
+  background-color: #f2f2f2;
+
   @media (--wide-vp) {
     grid-column: 1/1;
     grid-row: 1/1;
     z-index: 1;
+    background-color: transparent;
   }
 }
 
@@ -11,17 +14,17 @@
   display: flex;
   justify-content: space-between;
   line-height: 20px;
-  background-color: #ffffff;
   box-sizing: border-box;
 
   @media (--not-narrow-vp) {
-    padding: 60px 40px 56px;
+    padding: 60px 40px 61px;
   }
 
   @media (--wide-vp) {
     margin: 95px 0;
-    padding: 56px 80px;
+    padding: 58px 80px 61px;
     width: 565px;
+    background-color: #ffffff;
   }
 }
 
@@ -31,4 +34,10 @@
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (--not-narrow-vp) {
+    width: 154px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

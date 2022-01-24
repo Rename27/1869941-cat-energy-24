@@ -1,21 +1,27 @@
 .send {
   @media (--not-narrow-vp) {
     display: flex;
+    padding-bottom: 72px;
     width: 523px;
   }
 
   @media (--not-narrow-vp) {
     width: 100%;
   }
+
+  @media (--wide-vp) {
+    padding-bottom: 81px;
+  }
 }
 
 .send__button {
   width: 100%;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 
   @media (--not-narrow-vp) {
     width: 282px;
     margin: 0 61px 0 0;
+    font-size: 20px;
   }
 
   @media (--wide-vp) {
@@ -25,12 +31,18 @@
 }
 
 .send__description {
-  margin: 0;
+  margin: 0 0 31px;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 16px;
   text-align: center;
 
   @media (--not-narrow-vp) {
     font-size: 16px;
+    margin: 10px 0 21px;
+  }
+
+  @media (--wide-vp) {
+    margin: 13px 0 19px;
   }
 }

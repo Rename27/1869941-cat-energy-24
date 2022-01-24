@@ -5,7 +5,7 @@
   column-gap: 31px;
 
   @media (--not-narrow-vp) {
-    grid-template-columns: repeat(2, 162px) 300px;
+    grid-template-columns: repeat(2, 162px) 1fr;
     justify-content: start;
     column-gap: 42px;
   }
@@ -20,21 +20,51 @@
   display: flex;
   flex-direction: column-reverse;
   text-align: center;
+
+  @media (--wide-vp) {
+    margin-bottom: 44px;
+  }
 }
 
 
 .statistic__key {
+  margin-top: -10px;
+  width: 82px;
+  align-self: center;
   font-family: var(--main-font);
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  background-color: #eaeaea;
   color: #444444;
+  z-index: 1;
+
+  @media (--not-narrow-vp) {
+    width: 114px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+
+  @media (--wide-vp) {
+    background-color: #f2f2f2;
+  }
 }
 
 .statistic__value {
   margin: 0;
+  padding: 18px 25px 24px;
   font-size: 24px;
   line-height: 12px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-transform: uppercase;
+
+  @media (--not-narrow-vp) {
+    padding: 14px 0 19px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .statistic__item--spending {
@@ -50,19 +80,42 @@
   }
 
   @media (--wide-vp) {
-
     display: flex;
     grid-column: 1/3;
     flex-direction: row;
   }
 }
 
+.statistic__item--time .statistic__key {
+  @media (--not-narrow-vp) {
+    width: 143px;
+  }
+}
+
+.statistic__item--time .statistic__value {
+  padding: 19px 0 23px;
+
+  @media (--not-narrow-vp) {
+    padding: 13px 0 20px;
+  }
+}
+
+
 .statistic__item--spending .statistic__key {
+  margin: 0;
+  width: auto;
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (--not-narrow-vp) {
+    margin-top: 11px;
+    align-self: self-end;
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   @media (--wide-vp) {
     margin-right: 63px;
@@ -70,7 +123,14 @@
 }
 
 .statistic__item--spending .statistic__value {
+  padding: 0;
   font-size: 14px;
   line-height: 20px;
-  text-transform: uppercase;
+  border: none;
+
+  @media (--not-narrow-vp) {
+    margin-top: 9px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

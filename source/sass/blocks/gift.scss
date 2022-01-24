@@ -1,5 +1,4 @@
 .gift {
-  margin-top: 35px;
   height: 290px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/cat-background-catalog@1x.jpg");
   background-position: center;
@@ -15,7 +14,6 @@
   }
 
   @media (--wide-vp) {
-    margin: 0;
     height: 288px;
   }
 }
@@ -53,11 +51,11 @@
 
   @media (--wide-vp) {
     margin: 0;
-    padding-top: 185px;
+    padding: 185px 43px 0;
     text-align: center;
 
     &::before {
-      left: 45px;
+      left: 84px;
     }
   }
 }

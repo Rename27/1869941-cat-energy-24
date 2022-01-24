@@ -8,9 +8,9 @@
 <body class="page__body page__body--catalog">
   {% include "./templates/header.twig" %}
 
-  <main class="main-content catalog-page page__centerer">
-    <h1 class="catalog-page__title">Каталог продукции</h1>
-    <div class="catalog-page__catalog catalog">
+  <main class="main-content catalog-page">
+    <h1 class="catalog-page__title page__centerer">Каталог продукции</h1>
+    <div class="catalog-page__catalog catalog page__centerer">
       <ul class="catalog__list">
         <li class="catalog__item">
           <div class="catalog__card-product card-product">
@@ -258,7 +258,7 @@
                   alt="Упаковка корма Cat Energy PRO 500 грамм со вкусом гречки">
               </picture>
             </a>
-            <h3 class="card-product__title">Cat Energy Slim 500&nbsp;г</h3>
+            <h3 class="card-product__title">Cat Energy Slim 1000&nbsp;г</h3>
             <dl class="card-product__list">
               <div class="card-product__item">
                 <dt class="card-product__key">Масса</dt>
@@ -328,13 +328,14 @@
                 <dd class="card-product__value card-product__value--show-more">На самом деле вкусов гораздо больше!</dd>
               </div>
             </dl>
-            <a class="card-product__order-button card-product__order-button--show-more-button button" href="#">Показать
+            <a class="card-product__order-button card-product__order-button--show-more button button--show-more"
+              href="#">Показать
               все</a>
           </div>
         </li>
       </ul>
     </div>
-    <section class="catalog-page__extra-product extra-product">
+    <section class="catalog-page__extra-product extra-product page__centerer">
       <h2 class="extra-product__title title-line">Дополнительные товары</h2>
       <div class="extra-product__product-more product-more">
         <ul class="product-more__list">

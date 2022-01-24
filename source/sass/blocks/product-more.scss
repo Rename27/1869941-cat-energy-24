@@ -12,6 +12,7 @@
   list-style-type: none;
 
   @media (--not-narrow-vp) {
+    margin-bottom: 68px;
     padding: 0 37px;
     border: 1px solid #cdcdcd;
     border-bottom: none;
@@ -19,6 +20,9 @@
 
   @media (--wide-vp) {
     margin-bottom: 86px;
+    padding: 0;
+    border-right: none;
+    border-left: none;
   }
 }
 
@@ -56,6 +60,11 @@
     width: 894px;
     align-items: center;
     flex-direction: row;
+
+    &::after {
+      right: 0;
+      left: 0;
+    }
   }
 }
 
@@ -117,10 +126,10 @@
 }
 
 .product-more__button {
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 
   @media (--not-narrow-vp) {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 
   @media (--wide-vp) {
@@ -131,4 +140,5 @@
 
 .product-more__gift {
   position: relative;
+  margin-bottom: 76px;
 }

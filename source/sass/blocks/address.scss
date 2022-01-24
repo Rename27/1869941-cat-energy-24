@@ -1,13 +1,31 @@
+.address {
+  width: 139px;
+
+  @media (--not-narrow-vp) {
+    width: 155px;
+    text-align: right;
+  }
+
+  @media (--wide-vp) {
+    text-align: left;
+  }
+}
+
 .address__text {
   margin: 0;
   font-family: var(--main-font);
   font-size: 14px;
   font-style: normal;
   color: #444444;
+
+  @media (--not-narrow-vp) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .address__text--street {
   @media (--not-narrow-vp) {
-    margin-bottom: 28px;
+    margin-bottom: 17px;
   }
 }
