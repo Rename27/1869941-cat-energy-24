@@ -13,7 +13,6 @@
   @media (--wide-vp) {
     padding: 5px 0 0;
     width: auto;
-    justify-content: end;
     align-items: center;
   }
 }
@@ -70,7 +69,7 @@
 }
 
 .range__thumb {
-  margin: 2px 9px 2px;
+  margin: 2px 7px;
   width: 36px;
   height: 6px;
   border-radius: 6px;
