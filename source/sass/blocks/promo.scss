@@ -99,19 +99,25 @@
 
 .promo__img {
   margin-top: -136px;
+  width: 280px;
+  height: 270px;
 
   @media (--not-narrow-vp) {
     position: relative;
     top: -82px;
     margin: 0 0 -87px 0;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
   }
-  z-index: -1;
 
 
   @media (--wide-vp) {
     margin: 0 0 -237px 0;
     top: -368px;
     right: -448px;
+    width: 552px;
+    height: 499px;
   }
 }
 
