@@ -43,6 +43,7 @@
 
   @media (--wide-vp) {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 61px;
   }
 }

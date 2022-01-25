@@ -1,12 +1,28 @@
 .map {
+  display: grid;
+
   @media (--wide-vp) {
     grid-column: 1/1;
     grid-row: 1/1;
   }
 }
 
+.map__jsnone {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  height: 362px;
+  text-align: center;
+  background-color: #f2f2f2;
+
+  @media (--not-narrow-vp) {
+    height: 400px;
+  }
+}
+
 .map__iframe {
   display: block;
+  grid-column: 1/1;
+  grid-row: 1/1;
   width: 100%;
   height: 362px;
   border: none;

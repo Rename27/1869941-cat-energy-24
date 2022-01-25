@@ -78,6 +78,10 @@
 
 .main-navigation--jsnone .main-navigation__list {
   position: static;
+
+  @media (--not-narrow-vp) {
+    display: flex;
+  }
 }
 
 .main-navigation__list {

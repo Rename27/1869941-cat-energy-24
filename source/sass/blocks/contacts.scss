@@ -40,6 +40,7 @@
 
   @media (--wide-vp) {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 67px;
   }
 }
@@ -62,8 +63,8 @@
   }
 
   @media (--wide-vp) {
-    width: 50%;
-    margin: 0 75px 0 0;
+    width: 47%;
+    margin: 0 73px 0 0;
 
     &:last-child {
       margin: 0;
