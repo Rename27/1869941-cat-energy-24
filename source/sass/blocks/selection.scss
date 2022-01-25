@@ -126,8 +126,8 @@
     position: absolute;
     width: 26px;
     height: 26px;
-    top: 1px;
-    right: -26px;
+    top: -4px;
+    right: 4px;
     background-image: url("../../icons/sprite.svg#arrow");
     background-repeat: no-repeat;
     background-position: center;
@@ -137,8 +137,9 @@
   &:hover::after {
     width: 36px;
     height: 36px;
-    top: -4px;
-    right: -36px;
+    top: -9px;
+    right: -6px;
+
     background-image: url("../../icons/sprite.svg#skale-arrow");
   }
 
@@ -150,5 +151,15 @@
     font-size: 20px;
     line-height: 30px;
     border: none;
+
+    &::after {
+      top: 1px;
+      right: -26px;
+    }
+
+    &:hover::after {
+      top: -4px;
+      right: -36px;
+    }
   }
 }
