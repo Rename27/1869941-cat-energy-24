@@ -34,6 +34,14 @@
   width: 34px;
   height: 38px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (--not-narrow-vp) {
     width: 60px;
     height: 50px;
@@ -43,14 +51,6 @@
   @media (--wide-vp) {
     width: 70px;
     height: 60px;
-  }
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
   }
 }
 

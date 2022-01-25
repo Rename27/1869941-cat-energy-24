@@ -95,6 +95,8 @@
   }
 
   &:disabled {
+    cursor: not-allowed;
+
     &::before {
       background-color: #bababa;
       opacity: 0.3;
