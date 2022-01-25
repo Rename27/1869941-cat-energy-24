@@ -120,6 +120,17 @@
     }
   }
 
+  &:disabled {
+    &::before {
+      background-color: #bababa;
+      opacity: 0.3;
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
   @media (--not-narrow-vp) {
     margin: 0 19px 0 0;
     width: 40px;
@@ -153,4 +164,8 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.extras__control-input:disabled + .extras__control-label {
+  opacity: 0.3;
 }

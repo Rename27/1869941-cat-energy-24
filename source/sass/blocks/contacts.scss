@@ -97,6 +97,12 @@
 
   &:focus-visible {
     outline: 2px solid #444444;
+    outline-offset: -2px;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+    outline-offset: -2px;
   }
 
   @media (--not-narrow-vp) {
@@ -147,4 +153,8 @@
 
 .contacts__input:focus-visible + .contacts__input-icon::after {
   background-color: #68b738;
+}
+
+.contacts__input:invalid + .contacts__input-icon::after {
+  background-color: #ff8282;
 }

@@ -27,6 +27,7 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 
   @media (--not-narrow-vp) {
     font-size: 20px;
