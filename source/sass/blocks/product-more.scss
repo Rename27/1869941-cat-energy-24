@@ -95,7 +95,7 @@
 
   @media (--not-narrow-vp) {
     margin-bottom: 21px;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   @media (--wide-vp) {
