@@ -1,13 +1,3 @@
-.main-navigation {
-  @media (--not-narrow-vp) {
-    margin-top: 42px;
-  }
-
-  @media (--wide-vp) {
-    margin-top: 68px;
-  }
-}
-
 .main-navigation__toggle {
   position: absolute;
   display: block;
@@ -95,12 +85,17 @@
   list-style-type: none;
 
   @media (--not-narrow-vp) {
+    margin-top: 42px;
     width: 480px;
     justify-content: flex-end;
     flex-wrap: wrap;
     position: static;
     align-items: center;
     background-color: transparent;
+  }
+
+  @media (--wide-vp) {
+    margin-top: 68px;
   }
 }
 
