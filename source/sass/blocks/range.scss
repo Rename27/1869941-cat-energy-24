@@ -39,6 +39,7 @@
     }
 
     &:active {
+      color: #000000;
       border-color: transparent;
     }
   }
@@ -49,6 +50,7 @@
 }
 
 .range__scale {
+  position: relative;
   margin-top: 4px;
   width: 85px;
   height: 10px;
@@ -70,15 +72,16 @@
 }
 
 .range__thumb {
-  margin: 2px 7px;
+  position: absolute;
+  margin: 2px  7px;
   width: 36px;
   height: 6px;
+  border: none;
   border-radius: 6px;
   background-color: #68b738;
   cursor: pointer;
 
   @media (--not-narrow-vp) {
-    position: absolute;
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -86,6 +89,10 @@
     background-color: #ffffff;
     border: 1px solid #cdcdcd;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+
+    @media (--wide-vp) {
+      margin-left: 195px;
+    }
 
     &::after {
       position: absolute;
